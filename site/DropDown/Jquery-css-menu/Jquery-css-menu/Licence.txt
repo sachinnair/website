@@ -1,0 +1,20 @@
+
+
+
+
+
+================= Jquery and Css Drop Down Menu  ==================
+
+Hey:
+
+This is Jquery and Css Drop Down Menu for you to use in your projects. This will help you save some time.
+
+--------------------------------------------------------------------
+Designed and developed By http://www.saptarang.org
+--------------------------------------------------------------------
+jquery-1.6.2.min.js is liscensed to www.jquery.com and is an open source under MIT/GPL Liscense.
+
+You MAY use the source files in this package for commercial
+and personal projects.
+
+You CAN NOT redistribute or sell the source files in this package.

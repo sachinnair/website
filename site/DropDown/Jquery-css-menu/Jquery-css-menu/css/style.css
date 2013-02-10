@@ -1,0 +1,107 @@
+/*
+Script Author: www.saptarang.org
+Description: Navigation Drop Down Menu using jquery and css.
+Date: 20 August 2011.
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	font: 13px/20px Arial, Verdana, Tahoma;
+	color:#333;
+	margin:50px 0 0 0;
+}
+a:focus, input:focus {
+	outline:none;
+}
+a {
+	color:#06C;
+	text-decoration:none;
+}
+.clear {
+	clear:both;
+}
+#menu-wrapper {
+	display:block;
+	width:900px;
+	margin:0 auto;
+	background:#333 url(../images/menu-bg.png) repeat-x 0px 0px scroll;
+}
+#menu-wrapper ul {
+	display:block;
+	list-style:none;
+}
+#menu-wrapper li {
+	display:block;
+	position:relative;
+	float:left;
+}
+#menu-wrapper li a:link, #menu-wrapper li a:visited {
+	display:inline-block;
+	padding:7px 15px;
+	color:#fff;
+	font-weight:bold;
+	text-shadow:#000 0px 1px 0px;
+}
+#menu-wrapper li a:hover, #menu-wrapper li.active a, #menu-wrapper li:hover a {
+	background:url(../images/menu-bg.png) repeat-x 0px -35px scroll;
+	color:#333;
+	text-shadow:#f5f6f8 0px 1px 0px;
+}
+#menu-wrapper li a:focus, #menu-wrapper li a:active {
+	background:url(../images/menu-bg.png) repeat-x 0px -70px scroll;
+	color:#fff;
+	text-shadow:#000 0px 1px 0px;
+	border:#4b4b4d 1px solid;
+	border-style:none solid none solid;
+	padding:7px 14px;
+}
+.haschild>a {
+	background-image:url(../images/submenu-arrow.png)!important;
+	background-position:right center!important;
+	background-repeat:no-repeat!important;
+}
+/* -------------  Submenu  ---------  */
+
+#menu-wrapper li ul {
+	position:absolute;
+	border:#dadcdf 1px solid;
+	border-style:none solid solid solid;
+	left:0px;
+	top:34px;
+	display:none;
+	z-index:10000;
+}
+#menu-wrapper ul li ul.submenu li {
+	width:250px;
+	display:block;
+}
+#menu-wrapper ul li ul.submenu li a, #menu-wrapper ul li ul.submenu li:hover li a {
+	background:#ececec;
+	color:#333;
+	text-shadow:#fff 0px 1px 0px;
+	border-bottom:#fff 1px dotted;
+	display:block;
+}
+#menu-wrapper ul li ul.submenu li li a:hover, #menu-wrapper ul li ul.submenu li:hover a {
+	background:#333;
+	color:#fff;
+	text-shadow:#000 0px 1px 0px;
+}
+/* ------------- Level 2  ---------------------- */
+
+#menu-wrapper li li ul {
+	position:absolute;
+	border:#dadcdf 1px solid;
+	border-style:none solid solid solid;
+	left:250px;
+	top:0px;
+	display:none;
+	z-index:10000;
+}
